@@ -1,4 +1,4 @@
-/* Karanlık Mod */
+
 .dark {
     background-color: #000000;
     color: #fff;
@@ -35,7 +35,7 @@
     background-color: #000;
 }
 
-/* Navbar İçerik Konteyneri */
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@
     width: 100%;
 }
 
-/* Navbar Logo */
+
 .navbar-name {
     background-color: #eeebff;
     width: 40px;
@@ -56,7 +56,7 @@
     color: #3730A3;
 }
 
-/* Navbar Linkleri */
+
 .navbar-links {
     display: flex;
     align-items: center;
@@ -101,12 +101,12 @@
     color: #3730A3;
 }
 
-/* Karanlık Modda Iconların Beyaz Olması */
+
 .dark .switch-button {
     color: #fff;
 }
 
-/* Hamburger Menü Butonu */
+
 .menu-icon {
     display: none;
     font-size: 24px;
@@ -115,7 +115,7 @@
     cursor: pointer;
 }
 
-/* Mobil İçin Menü */
+
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
