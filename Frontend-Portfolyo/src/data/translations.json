@@ -1,27 +1,114 @@
 {
-    "en":{
-       "Skills":"Skills" ,
-       "Projects":"Projects",
-       "Hire me":"Hire me",
-       "name":"Eyüp Samet Alver",
-       "desciption":"Fullstack Web Developer",
-       "resume":"weather is sunny",
-       "github":"Github",
-       "linkedin":"linkedin"
+   "en": {
+     "skills": "Skills",
+     "projects": "Projects",
+     "hire_me": "Hire Me",
+     "name": "Eyüp Samet Alver",
+     "description": "Hello,I am Samet, a motivated Junior Full Stack Developer. I am currently in training. Even though I am new to this field, I have a good foundation in web development and I really want to improve my skills. I am committed to learning and keeping up with the latest technology.",
+     "resume": "Resume",
+     "github": "GitHub",
 
+     "linkedin": "LinkedIn",
+     "change_theme": "Switch Theme To",
+     "dark":"Dark",
+     "light":"Light",
+     "change_language": "Turkish",
+     "title": "Full-Stack Web Developer",
+     "birth_date": "01/09/1999",
+     "birth_date_words": "Birth Date",
+     "city": "İstanbul, Turkey",
+     "city_words": "City",
+     "education": "Istanbul University - Electronic Programming",
+     "education_words": "Education",
+     "license": "Bachelor's Degree",
+     "license_words": "Licence",
+     "role": "Web Developer",
+     "role_words": "Role",
+     "about_me": "About Me",
+     "profile": "Profile",
+     "experience": "Experience",
+     "contact": "Contact",
+     "email": "Email",
+     "phone": "Phone",
+     "address": "Address",
+     "projext_1_desc":"Game Of Thrones Fan Page",
+     "languages": "Languages",
+     "technologies": "Technologies",
+     "frameworks": "Frameworks",
+     "tools": "Tools",
+     "hobbies": "Hobbies",
+     "soft_skills": "Soft Skills",
+     "work_experience": "Work Experience",
+     "skills_list": [
+       {
+         "name": "JavaScript",
+         "description": "JavaScript is a powerful programming language used for creating interactive and dynamic web applications."
+       },
+       {
+         "name": "React.js",
+         "description": "React.js is a popular JavaScript library for building user interfaces, focusing on component-based architecture."
+       },
+       {
+         "name": "Node.js",
+         "description": "Node.js is a runtime environment that allows executing JavaScript code outside the browser, commonly used for backend development."
+       }
+     ]
+   
+   },
+   "tr": {
+     "skills": "Yetenekler",
+     "projects": "Projeler",
+     "hire_me": "Beni İşe Al",
+     "name": "Samet Rozgar",
+     "description": "Merhaba, ben Samet, motivasyonu yüksek bir Junior Full Stack Geliştiriciyim. Şu anda eğitimdeyim. Bu alanda yeni olsam da, web geliştirme konusunda iyi bir temelim var ve becerilerimi gerçekten geliştirmek istiyorum. Öğrenmeye ve en son teknolojileri takip etmeye kararlıyım.",
+     "resume": "Özgeçmiş",
+     "github": "GitHub",
+     "linkedin": "LinkedIn",
+     "change_theme": "Temayı Değiştir",
+     "change_language": "English",
+     "title": "Web Developer",
+     "birth_date": "01/09/1999",
+     "dark":"Koyu",
+     "light":"Açık",
+     "birth_date_words": "Doğum Tarihi",
+     "city": "İstanbul, Turkey",
+     "city_words": "Şehir",
+     "education": "Istanbul University - Electronic Programming",
+     "license": "Lisans Diploması",
+     "education_words": "Eğitim",
+     "license_words": "Lisans",
+     "role": "Yazılım Mühendisi",
+     "role_words": "Unvan",
+     "about_me": "Hakkımda",
+     "profile": "Profil",
+     "experience": "Deneyim",
+     "contact": "İletişim",
+     "email": "E-posta",
+     "phone": "Telefon",
+     "address": "Adres",
+     "languages": "Diller",
+     "technologies": "Teknolojiler",
+     "frameworks": "Frameworkler",
+     "tools": "Araçlar",
+     "hobbies": "Hobiler",
+     "soft_skills": "Kişisel Beceriler",
+     "work_experience": "İş Deneyimi",
+     
 
-    },
-
-    "tr":{
-        "Skills":"Yetenekler" ,
-        "Projects":"Projeler",
-        "Hire me":"Birlikte Çalışalım",
-        "name":"Eyüp Samet Alver",
-        "desciption":"Fullstack Web Developer",
-        "resume":"hava güneşli",
-        "github":"Github",
-        "linkedin":"linkedin"
+     "skills_list": [
+       {
+         "name": "JavaScript",
+         "description": "JavaScript, etkileşimli ve dinamik web uygulamaları oluşturmak için kullanılan güçlü bir programlama dilidir."
+       },
+       {
+         "name": "React.js",
+         "description": "React.js, bileşen tabanlı mimariye odaklanan popüler bir JavaScript kütüphanesidir ve kullanıcı arayüzleri geliştirmek için kullanılır."
+       },
+       {
+         "name": "Node.js",
+         "description": "Node.js, JavaScript kodunun tarayıcı dışında çalıştırılmasını sağlayan bir çalışma ortamıdır ve genellikle arka uç geliştirme için kullanılır."
+       }
+     ]
+   }
+ }
  
- 
-     }
-}

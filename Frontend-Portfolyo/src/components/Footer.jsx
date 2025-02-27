@@ -15,10 +15,10 @@ const Footer = () => {
         <a href="#" className="footer-link-item1">Blog</a>
         </div>
         <div className="footer-container-item">
-        <a href="#" className="footer-link-item2">Github</a>
+        <a href="https://github.com/eyupsametalver" className="footer-link-item2">Github</a>
         </div>
         <div className="footer-container-item">
-        <a href="#" className="footer-link-item">Linkedin</a>
+        <a href="https://www.linkedin.com/in/sametalver/" className="footer-link-item">Linkedin</a>
         </div>
         </div>
       </div>

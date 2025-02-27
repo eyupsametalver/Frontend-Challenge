@@ -1,27 +1,24 @@
-import React from 'react';
+import React, { useContext } from "react";
 import "./skills.css";
+import { ContextLanguage } from "../context/LanguageContexts";
 
 const Skills = () => {
+  const { content } = useContext(ContextLanguage);
+
   return (
-    <div className='skills'>
-      <h2 className="skills-title">Skills</h2>
+    <div className="skills">
+      <h2 className="skills-title">{content.skills}</h2>
       <div className="skills-container">
-        <div className="skills-container-item">
-            <h4>Java Script</h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div className="skills-container-item">
-        <h4>React.Js</h4>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div className="skills-container-item">
-        <h4>Node.Js</h4>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+        {content.skills_list.map((skill, index) => (
+          <div key={index} className="skills-container-item">
+            <h4>{skill.name}</h4>
+            <p>{skill.description}</p>
+          </div>
+        ))}
       </div>
       <div className="skills-bottom-line"></div>
     </div>
-  )
-}
+  );
+};
 
 export default Skills;

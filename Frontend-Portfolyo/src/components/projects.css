@@ -51,3 +51,6 @@
     color: #3730A3;
     text-decoration: underline;
 }
+.dark .projects-title{
+    color: white;
+}

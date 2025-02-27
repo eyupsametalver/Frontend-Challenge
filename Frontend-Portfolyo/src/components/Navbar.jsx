@@ -1,35 +1,62 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { FiMenu, FiX, FiSun, FiMoon, } from "react-icons/fi";
 import "./navbar.css";
 import useDarkMode from "../hooks/useDarkMode";
 import { useContext } from "react";
 import { ContextLanguage } from "../context/LanguageContexts";
+import { FaGlobeEurope } from "react-icons/fa";
+
+
 const Navbar = () => {
-  const [isDarkMode,setIsDarkMode]=useDarkMode();
+  const [isDarkMode, setIsDarkMode] = useDarkMode();
+  const { dilDegistir, content } = useContext(ContextLanguage);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const {dilDegistir,content}=useContext(ContextLanguage)
-  
-  const changeLanguage=()=>
-  {
-    dilDegistir("tr")
-  }
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  const changeLanguage = () => {
+    dilDegistir();
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="navbar">
-      <div className="navbar-name">A</div>
-      <div className="navbar-links">
-        <a href="#" className="navbar-link-item">{content.Skills}</a>
-        <a href="#" className="navbar-link-item">{content.Projects}</a>
-        <a href="#" className="navbar-link-item">Hire Me</a>
+    <nav className={`navbar ${isDarkMode ? "dark" : ""}`}>
+      <div className="navbar-container">
+        <div className="navbar-name">A</div>
 
-        <button onClick={()=>setIsDarkMode(!isDarkMode)}>
-          DarkMode
+        {/* Hamburger Menü Butonu */}
+        <button className="menu-icon" onClick={toggleMenu}>
+        {isMenuOpen ? <FiX /> : <FiMenu />}
         </button>
 
-        <button onClick={changeLanguage}>
-          Change Language
-        </button>
-        
+        {/* Navbar Linkleri */}
+        <div className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
+          <a href="#" className="navbar-link-item">{content.skills}</a>
+          <a href="#" className="navbar-link-item">{content.projects}</a>
+          <a href="#" className="navbar-link-item">{content.hire_me}</a>
+
+          {/* Tema Değiştirme Butonu */}
+          <div className="switch-container" onClick={toggleTheme}>
+            <button className="switch-button">
+            {isDarkMode ? <FiSun /> : <FiMoon />} 
+            {isDarkMode ? content.light : content.dark}
+            </button>
+          </div>
+
+          
+          <div className="switch-container" onClick={changeLanguage}>
+            <button className="switch-button">
+            <FaGlobeEurope /> TR/EN
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

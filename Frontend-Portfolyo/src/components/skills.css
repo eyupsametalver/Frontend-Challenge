@@ -5,6 +5,9 @@
     align-items: flex-start;
     padding: 40px 60px;
 }
+.dark .skills-title{
+    color: white;
+}
 
 .skills-title {
     font-size: 28px;
